@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.junjie</groupId>
+  <version>1.0-SNAPSHOT</version>
+  <name>workday</name>
+  <artifactId>workday</artifactId>
+  <packaging>war</packaging>
+
+  <properties>
+    <java-version>1.6</java-version>
+    <org.springframework-version>3.0.5.RELEASE</org.springframework-version>
+    <org.aspectj-version>1.6.9</org.aspectj-version>
+    <org.slf4j-version>1.6.1</org.slf4j-version>
+    <force.sdk.version>22.0.3-BETA</force.sdk.version>
+  </properties>
+
+  <dependencies>
+
+    <!-- Testing -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.8.2</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>jstl</groupId>
+      <artifactId>jstl</artifactId>
+      <version>1.1.2</version>
+    </dependency>
+
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>jstl</artifactId>
+      <version>1.2</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate</artifactId>
+      <version>3.2.4.ga</version>
+    </dependency>
+
+    <!-- Logging -->
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>1.2.15</version>
+    </dependency>
+
+
+    <!-- Spring Web MVC Features -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-webmvc</artifactId>
+      <version>${org.springframework-version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-test</artifactId>
+      <version>${org.springframework-version}</version>
+    </dependency>
+
+
+    <!-- Spring -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>${org.springframework-version}</version>
+      <exclusions>
+        <!-- Exclude Commons Logging in favor of SLF4j -->
+        <exclusion>
+          <groupId>commons-logging</groupId>
+          <artifactId>commons-logging</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+
+    <!-- Database.com -->
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-tx</artifactId>
+      <version>${org.springframework-version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-orm</artifactId>
+      <version>${org.springframework-version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-aop</artifactId>
+      <version>${org.springframework-version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.aspectj</groupId>
+      <artifactId>aspectjtools</artifactId>
+      <version>${org.aspectj-version}</version>
+    </dependency>
+
+    <!-- hsqldb -->
+    <dependency>
+      <groupId>org.hsqldb</groupId>
+      <artifactId>hsqldb</artifactId>
+      <version>2.2.4</version>
+    </dependency>
+
+
+  </dependencies>
+
+  <build>
+
+    <testResources>
+      <testResource>
+        <directory>src/main/webapp/WEB-INF</directory>
+      </testResource>
+    </testResources>
+    <plugins>
+
+      <!--<plugin>-->
+      <!--<groupId>com.dbdeploy</groupId>-->
+      <!--<artifactId>maven-dbdeploy-plugin</artifactId>-->
+      <!--<version>3.0M3</version>-->
+
+      <!--<configuration>-->
+      <!--<scriptdirectory>.</scriptdirectory>-->
+      <!--<driver>org.hsqldb.jdbcDriver</driver>-->
+      <!--<url>jdbc:hsqldb:file:db/testdb;shutdown=true</url>-->
+      <!--<userid>sa</userid>-->
+      <!--<password></password>-->
+      <!--<dbms>hsql</dbms>-->
+      <!--<delimiter>;</delimiter>-->
+      <!--<delimiterType>row</delimiterType>-->
+      <!--</configuration>-->
+
+      <!--<dependencies>-->
+      <!--<dependency>-->
+      <!--<groupId>org.hsqldb</groupId>-->
+      <!--<artifactId>hsqldb</artifactId>-->
+      <!--<version>2.2.4</version>-->
+      <!--</dependency>-->
+      <!--</dependencies>-->
+      <!--</plugin>-->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.3.2</version>
+        <configuration>
+          <source>${java-version}</source>
+          <target>${java-version}</target>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <!-- This plugin is needed to generate the .projects properly so that
+              they will have springnature and use springbuilder -->
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-eclipse-plugin</artifactId>
+        <version>2.7</version>
+        <!-- Note 2.8 does not work with AspectJ aspect path -->
+        <configuration>
+          <downloadSources>true</downloadSources>
+          <downloadJavadocs>true</downloadJavadocs>
+          <wtpmanifest>true</wtpmanifest>
+          <wtpapplicationxml>true</wtpapplicationxml>
+          <wtpversion>2.0</wtpversion>
+          <additionalBuildcommands>
+            <buildCommand>
+              <name>org.springframework.ide.eclipse.core.springbuilder</name>
+            </buildCommand>
+          </additionalBuildcommands>
+          <additionalProjectnatures>
+            <projectnature>org.springframework.ide.eclipse.core.springnature</projectnature>
+          </additionalProjectnatures>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-failsafe-plugin</artifactId>
+        <version>2.7.2</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>integration-test</goal>
+              <goal>verify</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

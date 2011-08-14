@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.junjie.model.Timesheet" table="Timesheet">
+    <id name="timesheetId" column="timesheetId">
+      <generator class="increment"/>
+    </id>
+    <property name="employeeId" column="employeeId"/>
+    <property name="statusCode" column="statusCode"/>
+    <property name="departmentCode" column="departmentCode"/>
+    <property name="periodEndingDate" column="periodEndingDate"/>
+    <property name="minutesMon" column="minutesMon"/>
+    <property name="minutesTue" column="minutesTue"/>
+    <property name="minutesWed" column="minutesWed"/>
+    <property name="minutesThu" column="minutesThu"/>
+    <property name="minutesFri" column="minutesFri"/>
+    <property name="minutesSat" column="minutesSat"/>
+    <property name="minutesSun" column="minutesSun"/>
+
+    <many-to-one name="department" column="departmentCode" class="com.junjie.model.Department"
+                 lazy="false" not-found="ignore" cascade="none" insert="false" update="false"/>
+  </class>
+</hibernate-mapping>

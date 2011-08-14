@@ -1,5 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ taglib prefix="dt" uri="http://displaytag.sf.net/el" %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
@@ -11,10 +12,13 @@
 </head>
 
 <body>
+
+
 <table width="85%" border="1" align="center" cellpadding="0"
 	cellspacing="0">
 <tr>
 	<td>
+
 	<table width="100%" border="0" align="center" cellpadding="4"
 		cellspacing="0" bordercolor="#CCCCCC">
         <tr bgcolor="#C2DCEB" valign="middle">
@@ -24,7 +28,7 @@
 	        <td align="right" nowrap="nowrap"><a href="signout.htm">Sign out</a></td>
 		</tr>
 		<tr>
-			<td colspan="2">
+			<td colspan="2" align="center">
 			<p align="center"><!-- status messages --> <c:if
 			test="${not empty message}">
 			<font color="green"><c:out value="${message}" /></font>
@@ -32,41 +36,58 @@
 		</c:if></p>
 		<p align="center"><a href="enterhours.htm">Click here</a> to add a
 		new timesheet, or select one from the list below.</p>
-		<table border="1" align="center" cellpadding="8" cellspacing="0">
-			<tr>
-				<th>Period Ending</th>
-				<th>Hours</th>
-				<th>Status</th>
-        <th>Department</th>
-				<th>Timesheet Id</th>
-			</tr>
-			<c:forEach items="${timesheets}" var="timesheet">
-				<tr>
-					<td align="center"><a
-						href='enterhours.htm?tid=<c:out 
-						value="${timesheet.timesheetId}"/>'><fmt:formatDate
-						value="${timesheet.periodEndingDate}" type="date"
-						pattern="MM/dd/yyyy" /></a>
-					<div></div>
-					</td>
-					<td align="center"><fmt:formatNumber
-						value="${timesheet.totalMinutes / 60}" 
-						pattern="0.00" /></td>
-          <td align="center"><c:out
-          value="${timesheet.statusCode}" />
-          <div></div>
-          </td>
-					<td align="center"><c:out
-					value="${timesheet.department.name}" />
-					<div></div>
-					</td>
-					<td align="center">
-					<c:out value="${timesheet.timesheetId}" />
-						<div></div>
-						</td>
-					</tr>
-				</c:forEach>
-			</table>
+
+
+   <dt:table name="timesheets" id="timesheet" defaultsort="2"
+requestURI="timesheetlist.htm" cellpadding="5" cellspacing="0" export="false" class="tableborder" >
+     <dt:column sortable="true" title="Period Ending" href="enterhours.htm" sortProperty="periodEndingDate"
+						paramId="tid" paramProperty="timesheetId" class="tdcenter">
+       <fmt:formatDate value="${timesheet.periodEndingDate}" pattern="MM/dd/yyyy" type="date"/>
+     </dt:column>
+     <dt:column sortable="true" title="Timesheet Id">
+        <fmt:formatNumber value="${timesheet.timesheetId}" pattern="0000"/>
+     </dt:column>
+     <dt:column property="statusCode" sortable="true" title="Status"/>
+     <dt:column sortable="true" title="Hours">
+       <fmt:formatNumber value="${timesheet.totalMinutes / 60.0}" pattern="0.00" />
+     </dt:column>
+     <dt:column property="department.name" sortable="true" title="Department"/>
+</dt:table>
+		<%--<table border="1" align="center" cellpadding="8" cellspacing="0">--%>
+			<%--<tr>--%>
+				<%--<th>Period Ending</th>--%>
+				<%--<th>Hours</th>--%>
+				<%--<th>Status</th>--%>
+        <%--<th>Department</th>--%>
+				<%--<th>Timesheet Id</th>--%>
+			<%--</tr>--%>
+			<%--<c:forEach items="${timesheets}" var="timesheet">--%>
+				<%--<tr>--%>
+					<%--<td align="center"><a--%>
+						<%--href='enterhours.htm?tid=<c:out --%>
+						<%--value="${timesheet.timesheetId}"/>'><fmt:formatDate--%>
+						<%--value="${timesheet.periodEndingDate}" type="date"--%>
+						<%--pattern="MM/dd/yyyy" /></a>--%>
+					<%--<div></div>--%>
+					<%--</td>--%>
+					<%--<td align="center"><fmt:formatNumber--%>
+						<%--value="${timesheet.totalMinutes / 60}" --%>
+						<%--pattern="0.00" /></td>--%>
+          <%--<td align="center"><c:out--%>
+          <%--value="${timesheet.statusCode}" />--%>
+          <%--<div></div>--%>
+          <%--</td>--%>
+					<%--<td align="center"><c:out--%>
+					<%--value="${timesheet.department.name}" />--%>
+					<%--<div></div>--%>
+					<%--</td>--%>
+					<%--<td align="center">--%>
+					<%--<c:out value="${timesheet.timesheetId}" />--%>
+						<%--<div></div>--%>
+						<%--</td>--%>
+					<%--</tr>--%>
+				<%--</c:forEach>--%>
+			<%--</table>--%>
 			</td>
 		</tr>
 	</table>

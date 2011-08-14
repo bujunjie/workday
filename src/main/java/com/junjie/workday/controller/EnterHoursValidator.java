@@ -1,12 +1,12 @@
-package com.junjie.controller;
+package com.junjie.workday.controller;
 
+import com.junjie.workday.model.Timesheet;
 import org.springframework.validation.Errors;
-import com.junjie.model.Timesheet;
 
 /**
  * Validator for EnterHoursController
  * @author anil
- * @see com.junjie.controller.EnterHoursController
+ * @see EnterHoursController
  */
 public class EnterHoursValidator implements
         org.springframework.validation.Validator

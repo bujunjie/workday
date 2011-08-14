@@ -1,6 +1,6 @@
-package com.junjie.controller;
+package com.junjie.workday.controller;
 
-import com.junjie.util.ApplicationSecurityManager;
+import com.junjie.workday.util.ApplicationSecurityManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,10 +1,10 @@
 package com.junjie;
 
-import com.junjie.controller.TimesheetListController;
-import com.junjie.model.Employee;
-import com.junjie.model.Timesheet;
-import com.junjie.model.TimesheetManager;
-import com.junjie.util.ApplicationSecurityManager;
+import com.junjie.workday.controller.TimesheetListController;
+import com.junjie.workday.model.Employee;
+import com.junjie.workday.model.Timesheet;
+import com.junjie.workday.model.TimesheetManager;
+import com.junjie.workday.util.ApplicationSecurityManager;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

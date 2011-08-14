@@ -1,4 +1,4 @@
-package com.junjie.model;
+package com.junjie.workday.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

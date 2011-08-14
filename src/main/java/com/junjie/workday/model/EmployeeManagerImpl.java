@@ -1,4 +1,4 @@
-package com.junjie.model;
+package com.junjie.workday.model;
 
 import org.hibernate.HibernateException;
 import org.hibernate.SessionFactory;
@@ -6,7 +6,6 @@ import org.hibernate.Transaction;
 import org.hibernate.classic.Session;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.orm.hibernate3.HibernateTemplate;
-import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

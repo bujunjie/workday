@@ -1,4 +1,4 @@
-package com.junjie.controller;
+package com.junjie.workday.controller;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;

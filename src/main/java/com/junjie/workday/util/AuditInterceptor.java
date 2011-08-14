@@ -1,4 +1,4 @@
-package com.junjie.util;
+package com.junjie.workday.util;
 
 import org.hibernate.EmptyInterceptor;
 import org.hibernate.Transaction;

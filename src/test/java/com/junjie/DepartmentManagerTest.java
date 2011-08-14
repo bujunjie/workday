@@ -1,7 +1,7 @@
 package com.junjie;
 
-import com.junjie.model.Department;
-import com.junjie.model.DepartmentManager;
+import com.junjie.workday.model.Department;
+import com.junjie.workday.model.DepartmentManager;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 

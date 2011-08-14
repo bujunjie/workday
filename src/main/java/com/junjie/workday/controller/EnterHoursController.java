@@ -1,35 +1,27 @@
-package com.junjie.controller;
+package com.junjie.workday.controller;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import javax.annotation.Resources;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.junjie.model.Department;
+import com.junjie.workday.model.Department;
+import com.junjie.workday.model.DepartmentManager;
+import com.junjie.workday.model.Employee;
+import com.junjie.workday.model.Timesheet;
+import com.junjie.workday.util.ApplicationSecurityManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.validation.BindException;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.ServletRequestDataBinder;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.support.SessionStatus;
-import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.mvc.SimpleFormController;
-import com.junjie.model.DepartmentManager;
-import com.junjie.model.Employee;
-import com.junjie.model.Timesheet;
-import com.junjie.model.TimesheetManager;
-import com.junjie.util.ApplicationSecurityManager;
-import com.junjie.util.DateUtil;
+import com.junjie.workday.model.TimesheetManager;
+import com.junjie.workday.util.DateUtil;
 
 /**
  * Controller class for the "Enter Hours" screen

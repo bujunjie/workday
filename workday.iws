@@ -2,17 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4260a0a-26e9-47b1-aba9-e668edefdeb9" name="Default" comment="Refactored/Updated Test cases and used BaseTest">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/db-config.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/junjie/controller/EnterHoursController.java" afterPath="$PROJECT_DIR$/src/main/java/com/junjie/workday/controller/EnterHoursController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/junjie/controller/EnterHoursValidator.java" afterPath="$PROJECT_DIR$/src/main/java/com/junjie/workday/controller/EnterHoursValidator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/junjie/controller/HelloWorldController.java" afterPath="$PROJECT_DIR$/src/main/java/com/junjie/workday/controller/HelloWorldController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/junjie/controller/HttpRequestInterceptor.java" afterPath="$PROJECT_DIR$/src/main/java/com/junjie/workday/controller/HttpRequestInterceptor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/junjie/controller/MinutesPropertyEditor.java" afterPath="$PROJECT_DIR$/src/main/java/com/junjie/workday/controller/MinutesPropertyEditor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/junjie/controller/SignInController.java" afterPath="$PROJECT_DIR$/src/main/java/com/junjie/workday/controller/SignInController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/junjie/controller/SignInValidator.java" afterPath="$PROJECT_DIR$/src/main/java/com/junjie/workday/controller/SignInValidator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/junjie/controller/SignOutController.java" afterPath="$PROJECT_DIR$/src/main/java/com/junjie/workday/controller/SignOutController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/junjie/controller/TimesheetListController.java" afterPath="$PROJECT_DIR$/src/main/java/com/junjie/workday/controller/TimesheetListController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/junjie/model/Department.java" afterPath="$PROJECT_DIR$/src/main/java/com/junjie/workday/model/Department.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/junjie/model/DepartmentManager.java" afterPath="$PROJECT_DIR$/src/main/java/com/junjie/workday/model/DepartmentManager.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/junjie/model/DepartmentManagerImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/junjie/workday/model/DepartmentManagerImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/junjie/model/Employee.java" afterPath="$PROJECT_DIR$/src/main/java/com/junjie/workday/model/Employee.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/junjie/model/EmployeeManager.java" afterPath="$PROJECT_DIR$/src/main/java/com/junjie/workday/model/EmployeeManager.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/junjie/model/EmployeeManagerImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/junjie/workday/model/EmployeeManagerImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/junjie/model/Timesheet.java" afterPath="$PROJECT_DIR$/src/main/java/com/junjie/workday/model/Timesheet.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/junjie/model/TimesheetManager.java" afterPath="$PROJECT_DIR$/src/main/java/com/junjie/workday/model/TimesheetManager.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/junjie/model/TimesheetManagerImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/junjie/workday/model/TimesheetManagerImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/junjie/util/ApplicationSecurityManager.java" afterPath="$PROJECT_DIR$/src/main/java/com/junjie/workday/util/ApplicationSecurityManager.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/junjie/util/AuditInterceptor.java" afterPath="$PROJECT_DIR$/src/main/java/com/junjie/workday/util/AuditInterceptor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/junjie/util/DateUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/junjie/workday/util/DateUtil.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/junjie/util/MyAspect.java" afterPath="$PROJECT_DIR$/src/main/java/com/junjie/workday/util/MyAspect.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/junjie/util/ReminderEmail.java" afterPath="$PROJECT_DIR$/src/main/java/com/junjie/workday/util/ReminderEmail.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/junjie/util/SpringTestMessage.java" afterPath="$PROJECT_DIR$/src/main/java/com/junjie/workday/util/SpringTestMessage.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/junjie/util/WorkdayJmxBean.java" afterPath="$PROJECT_DIR$/src/main/java/com/junjie/workday/util/WorkdayJmxBean.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/data/hdb.lck" afterPath="$PROJECT_DIR$/src/main/resources/data/hdb.lck" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/junjie/model/Department.java" afterPath="$PROJECT_DIR$/src/main/java/com/junjie/model/Department.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/junjie/model/DepartmentManagerImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/junjie/model/DepartmentManagerImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/junjie/model/Employee.java" afterPath="$PROJECT_DIR$/src/main/java/com/junjie/model/Employee.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/junjie/model/EmployeeManagerImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/junjie/model/EmployeeManagerImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/junjie/model/Timesheet.java" afterPath="$PROJECT_DIR$/src/main/java/com/junjie/model/Timesheet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/junjie/model/TimesheetManagerImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/junjie/model/TimesheetManagerImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application-context.xml" afterPath="$PROJECT_DIR$/src/main/resources/application-context.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/orm/Department.hbm.xml" afterPath="$PROJECT_DIR$/src/main/resources/orm/Department.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/orm/Employee.hbm.xml" afterPath="$PROJECT_DIR$/src/main/resources/orm/Employee.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/orm/Timesheet.hbm.xml" afterPath="$PROJECT_DIR$/src/main/resources/orm/Timesheet.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/hello-servlet.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/hello-servlet.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/workday-servlet.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/workday-servlet.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/junjie/DepartmentManagerTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/junjie/DepartmentManagerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workday.iml" afterPath="$PROJECT_DIR$/workday.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/junjie/EmployeeManagerTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/junjie/EmployeeManagerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/junjie/SpringTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/junjie/SpringTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/junjie/TimesheetListControllerTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/junjie/TimesheetListControllerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/junjie/TimesheetManagerTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/junjie/TimesheetManagerTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workday.iws" afterPath="$PROJECT_DIR$/workday.iws" />
     </list>
     <list id="79055b51-6a71-4b31-9b1c-75ae92ecd60d" name="No Commit" comment="" />
@@ -111,7 +137,7 @@
   </component>
   <component name="DebuggerManager">
     <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/junjie/model/Timesheet.java" line="212" class="com.junjie.model.Timesheet" package="com.junjie.model">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/junjie/workday/model/Timesheet.java" line="212" class="com.junjie.model.Timesheet" package="com.junjie.model">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -248,29 +274,9 @@
         </entry>
       </file>
       <file leaf-file-name="Employee.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/junjie/model/Employee.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/junjie/workday/model/Employee.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="129" selection-start="926" selection-end="926" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestContext.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/3.0.5.RELEASE/spring-test-3.0.5.RELEASE.jar!/org/springframework/test/context/TestContext.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="0" selection-start="2538" selection-end="2538" vertical-scroll-proportion="-20.44">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Department.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/junjie/model/Department.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="5" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0">
+            <state line="41" column="0" selection-start="934" selection-end="934" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -279,9 +285,9 @@
         </entry>
       </file>
       <file leaf-file-name="Timesheet.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/junjie/model/Timesheet.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/junjie/workday/model/Timesheet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="143" column="0" selection-start="3030" selection-end="3030" vertical-scroll-proportion="0.0">
+            <state line="143" column="0" selection-start="3038" selection-end="3038" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -289,10 +295,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DepartmentManagerTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DepartmentManagerTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/junjie/DepartmentManagerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="0" selection-start="940" selection-end="940" vertical-scroll-proportion="0.7266436">
+            <state line="34" column="0" selection-start="956" selection-end="956" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -301,34 +307,52 @@
       <file leaf-file-name="EmployeeManagerTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/junjie/EmployeeManagerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="734" selection-end="734" vertical-scroll-proportion="0.0">
+            <state line="13" column="13" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rapidjava-ajax.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/rapidjava-ajax.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="38.458332">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="enterhours.jsp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/enterhours.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="DepartmentManager.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/junjie/model/DepartmentManager.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/junjie/workday/model/DepartmentManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="17" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0">
+            <state line="7" column="17" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="DepartmentManagerImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/junjie/model/DepartmentManagerImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/junjie/workday/model/DepartmentManagerImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="71" selection-start="837" selection-end="837" vertical-scroll-proportion="0.0">
+            <state line="24" column="63" selection-start="774" selection-end="774" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="EmployeeManagerImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/junjie/model/EmployeeManagerImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/junjie/workday/model/EmployeeManagerImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="12" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0">
+            <state line="21" column="12" selection-start="598" selection-end="598" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -337,9 +361,9 @@
         </entry>
       </file>
       <file leaf-file-name="TimesheetManagerImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/junjie/model/TimesheetManagerImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/junjie/workday/model/TimesheetManagerImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="572" selection-end="572" vertical-scroll-proportion="0.0">
+            <state line="19" column="0" selection-start="509" selection-end="509" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -521,14 +545,6 @@
               <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="junjie" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -541,88 +557,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workday" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workday" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workday" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workday" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="junjie" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workday" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workday" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="junjie" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -698,7 +632,7 @@
       <recent name="com.junjie.model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DepartmentManagerTest">
+  <component name="RunManager" selected="Tomcat Server.Server">
     <configuration default="false" name="SpringTest.testMessage" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false">
         <pattern>
@@ -1062,35 +996,43 @@
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
       <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
       <flatten-packages value="false" />
       <is-autoscroll-to-source value="true" />
     </todo-panel>
     <todo-panel id="all">
       <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
       <flatten-packages value="false" />
       <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="959" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17531718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37600923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29411766" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298731" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298731" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298731" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24294479" sideWeight="0.43137255" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12085889" sideWeight="0.8292964" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24294479" sideWeight="0.7231834" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2768166" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24294479" sideWeight="0.6239908" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33679354" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50865054" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1193,61 +1135,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="43" selection-start="1353" selection-end="1353" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/orm/Employee.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/orm/Department.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/orm/Timesheet.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/junjie/model/Department.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="5" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/junjie/model/Timesheet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="0" selection-start="3030" selection-end="3030" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/junjie/model/Employee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="129" selection-start="926" selection-end="926" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/3.0.5.RELEASE/spring-test-3.0.5.RELEASE.jar!/org/springframework/test/context/TestContext.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="0" selection-start="2538" selection-end="2538" vertical-scroll-proportion="-20.44">
@@ -1265,9 +1152,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/junjie/model/TimesheetManagerImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/junjie/workday/model/TimesheetManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="572" selection-end="572" vertical-scroll-proportion="0.0">
+        <state line="19" column="0" selection-start="509" selection-end="509" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1284,39 +1171,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/junjie/model/EmployeeManagerImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/junjie/workday/model/EmployeeManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="12" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0">
+        <state line="21" column="12" selection-start="598" selection-end="598" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/junjie/EmployeeManagerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/junjie/workday/model/DepartmentManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="734" selection-end="734" vertical-scroll-proportion="0.0">
+        <state line="24" column="63" selection-start="774" selection-end="774" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/junjie/model/DepartmentManagerImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/junjie/workday/model/DepartmentManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="71" selection-start="837" selection-end="837" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/junjie/model/DepartmentManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="17" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0">
+        <state line="7" column="17" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/junjie/DepartmentManagerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="940" selection-end="940" vertical-scroll-proportion="0.7266436">
+        <state line="34" column="0" selection-start="956" selection-end="956" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/junjie/EmployeeManagerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/helloworld.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/rapidjava-ajax.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/rapidjava-ajax.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="38.458332">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/junjie/workday/model/Department.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="5" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/enterhours.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>

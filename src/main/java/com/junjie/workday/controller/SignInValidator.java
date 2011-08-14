@@ -1,7 +1,7 @@
-package com.junjie.controller;
+package com.junjie.workday.controller;
 
+import com.junjie.workday.model.Employee;
 import org.springframework.validation.Errors;
-import com.junjie.model.Employee;
 
 /**
  * Validator for SignInController

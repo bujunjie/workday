@@ -1,14 +1,14 @@
-package com.junjie.controller;
+package com.junjie.workday.controller;
 
 /**
  * @author jbu
  */
 
-import com.junjie.model.Employee;
-import com.junjie.model.Timesheet;
-import com.junjie.model.TimesheetManager;
-import com.junjie.util.ApplicationSecurityManager;
-import com.junjie.util.WorkdayJmxBean;
+import com.junjie.workday.model.Employee;
+import com.junjie.workday.model.Timesheet;
+import com.junjie.workday.model.TimesheetManager;
+import com.junjie.workday.util.ApplicationSecurityManager;
+import com.junjie.workday.util.WorkdayJmxBean;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

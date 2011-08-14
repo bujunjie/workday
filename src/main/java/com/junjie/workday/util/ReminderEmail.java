@@ -1,14 +1,12 @@
-package com.junjie.util;
+package com.junjie.workday.util;
 
-import com.junjie.model.Employee;
-import com.junjie.model.EmployeeManager;
+import com.junjie.workday.model.Employee;
+import com.junjie.workday.model.EmployeeManager;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.MailSender;
 import org.springframework.mail.SimpleMailMessage;
-import org.springframework.scheduling.annotation.Scheduled;
 
-import java.util.Arrays;
 import java.util.List;
 
 /**

@@ -1,4 +1,4 @@
-package com.junjie.model;
+package com.junjie.workday.model;
 
 import java.util.List;
 

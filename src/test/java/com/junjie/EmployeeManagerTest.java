@@ -1,7 +1,7 @@
 package com.junjie;
 
-import com.junjie.model.Employee;
-import com.junjie.model.EmployeeManager;
+import com.junjie.workday.model.Employee;
+import com.junjie.workday.model.EmployeeManager;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 

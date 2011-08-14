@@ -3,7 +3,7 @@
         "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-  <class name="com.junjie.model.Department" table="Department">
+  <class name="com.junjie.workday.model.Department" table="Department">
     <id name="departmentCode" column="departmentCode">
       <generator class="assigned"/>
     </id>

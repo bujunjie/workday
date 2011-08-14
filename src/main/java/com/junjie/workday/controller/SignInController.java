@@ -1,23 +1,20 @@
-package com.junjie.controller;
+package com.junjie.workday.controller;
 
-import com.junjie.model.Employee;
-import com.junjie.model.EmployeeManager;
-import com.junjie.util.ApplicationSecurityManager;
-import com.junjie.util.WorkdayJmxBean;
+import com.junjie.workday.model.Employee;
+import com.junjie.workday.model.EmployeeManager;
+import com.junjie.workday.util.ApplicationSecurityManager;
+import com.junjie.workday.util.WorkdayJmxBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.validation.BindException;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.support.SessionStatus;
-import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.Map;
 
 /**
  * Controller for the Sign In screen.

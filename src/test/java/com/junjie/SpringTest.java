@@ -1,6 +1,6 @@
 package com.junjie;
 
-import com.junjie.util.SpringTestMessage;
+import com.junjie.workday.util.SpringTestMessage;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 

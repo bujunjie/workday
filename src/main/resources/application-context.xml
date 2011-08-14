@@ -22,7 +22,7 @@
   </bean>
 
 
-  <bean id="springtestmessage" class="com.junjie.util.SpringTestMessage"
+  <bean id="springtestmessage" class="com.junjie.workday.util.SpringTestMessage"
         lazy-init="false" init-method="printMessage">
     <property name="message" ref="stringmessage"/>
         </bean>

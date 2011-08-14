@@ -1,4 +1,4 @@
-package com.junjie.util;
+package com.junjie.workday.util;
 
 import javax.servlet.http.HttpServletRequest;
 

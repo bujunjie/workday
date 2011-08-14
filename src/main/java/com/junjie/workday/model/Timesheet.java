@@ -1,4 +1,4 @@
-package com.junjie.model;
+package com.junjie.workday.model;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;

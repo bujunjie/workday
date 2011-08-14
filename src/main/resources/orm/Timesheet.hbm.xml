@@ -3,7 +3,7 @@
   "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-  <class name="com.junjie.model.Timesheet" table="Timesheet">
+  <class name="com.junjie.workday.model.Timesheet" table="Timesheet">
     <id name="timesheetId" column="timesheetId">
       <generator class="increment"/>
     </id>
@@ -19,7 +19,7 @@
     <property name="minutesSat" column="minutesSat"/>
     <property name="minutesSun" column="minutesSun"/>
 
-    <many-to-one name="department" column="departmentCode" class="com.junjie.model.Department"
+    <many-to-one name="department" column="departmentCode" class="com.junjie.workday.model.Department"
                  lazy="false" not-found="ignore" cascade="none" insert="false" update="false"/>
   </class>
 </hibernate-mapping>

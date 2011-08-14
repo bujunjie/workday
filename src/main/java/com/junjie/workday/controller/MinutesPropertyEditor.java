@@ -1,4 +1,4 @@
-package com.junjie.controller;
+package com.junjie.workday.controller;
 
 import java.beans.PropertyEditorSupport;
 import java.text.DecimalFormat;
@@ -7,7 +7,7 @@ import java.text.DecimalFormat;
  * Property editor for the Enter Hours screen; registered in 
  * the EnterHoursController class.
  * @author anil
- * @see com.junjie.controller.EnterHoursController
+ * @see EnterHoursController
  */
 public class MinutesPropertyEditor extends PropertyEditorSupport
 {

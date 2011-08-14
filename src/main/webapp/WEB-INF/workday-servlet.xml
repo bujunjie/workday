@@ -43,7 +43,7 @@
   <task:annotation-driven/>
 
 
-  <bean id="httpRequestInterceptor" class="com.junjie.controller.HttpRequestInterceptor">
+  <bean id="httpRequestInterceptor" class="com.junjie.workday.controller.HttpRequestInterceptor">
     <property name="allowedUrl">
       <list>
         <value>/signout.htm</value>
@@ -53,8 +53,8 @@
   </bean>
 
   <!-- Utility classes -->
-  <bean id="applicationSecurityManager" class="com.junjie.util.ApplicationSecurityManager"/>
-  <bean id="workdayJmxBean" class="com.junjie.util.WorkdayJmxBean"/>
+  <bean id="applicationSecurityManager" class="com.junjie.workday.util.ApplicationSecurityManager"/>
+  <bean id="workdayJmxBean" class="com.junjie.workday.util.WorkdayJmxBean"/>
 
   <!-- Resource Bundle -->
   <bean id="messageSource"
@@ -72,7 +72,7 @@
     <task:scheduled ref="reminderEmail" method="sendMail" cron="0 0 14 * * 6"/>
   </task:scheduled-tasks>
 
-  <bean id="reminderEmail" class="com.junjie.util.ReminderEmail"/>
+  <bean id="reminderEmail" class="com.junjie.workday.util.ReminderEmail"/>
 
   <!-- Spring mail support -->
   <bean id="mailSender"

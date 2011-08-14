@@ -1,10 +1,15 @@
 package com.junjie.model;
 
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import java.util.Date;
 
 /**
  * @author jbu
  */
+@Entity
 public class Timesheet {
   int timesheetId;
   int employeeId;
@@ -39,6 +44,7 @@ public class Timesheet {
     this.minutesSun = minutesSun;
   }
 
+  @Id
   public int getTimesheetId() {
     return timesheetId;
   }
@@ -135,6 +141,7 @@ public class Timesheet {
     this.minutesSun = minutesSun;
   }
 
+  @ManyToOne(cascade = CascadeType.MERGE)
   public Department getDepartment() {
     return department;
   }

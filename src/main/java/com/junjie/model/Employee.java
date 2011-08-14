@@ -1,8 +1,15 @@
 package com.junjie.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 /**
  * @author jbu
  */
+@Entity
 public class Employee {
   int employeeId;
   String name;
@@ -23,6 +30,8 @@ public class Employee {
     this.managerEmployeeId = managerEmployeeId;
   }
 
+  @Id
+  @GeneratedValue(strategy= GenerationType.AUTO)
   public int getEmployeeId() {
     return employeeId;
   }

@@ -2,9 +2,12 @@ package com.junjie.model;
 
 import org.hibernate.HibernateException;
 import org.hibernate.LockMode;
+import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.classic.Session;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
+import org.springframework.stereotype.Repository;
 
 import java.util.Date;
 import java.util.List;
@@ -12,12 +15,15 @@ import java.util.List;
 /**
  * @author jbu
  */
-public class TimesheetManagerImpl extends HibernateDaoSupport implements TimesheetManager {
+@Repository("timesheetManager")
+public class TimesheetManagerImpl implements TimesheetManager {
+  @Autowired
+  SessionFactory sessionFactory;
 
   @Override
   public List getTimesheets() {
     List<Timesheet> result = null;
-    Session session = getSessionFactory().openSession();
+    Session session = sessionFactory.openSession();
     Transaction tx = session.beginTransaction();
     try {
       result = session.createQuery("from Timesheet order by employeeId").list();
@@ -35,7 +41,7 @@ public class TimesheetManagerImpl extends HibernateDaoSupport implements Timeshe
   @Override
   public List getTimesheets(int employeeId) {
     List<Timesheet> result = null;
-    Session session = getSessionFactory().openSession();
+    Session session = sessionFactory.openSession();
     Transaction tx = session.beginTransaction();
     try {
       result = session.createQuery("from Timesheet WHERE employeeId=?").setInteger(0, employeeId).list();
@@ -52,7 +58,7 @@ public class TimesheetManagerImpl extends HibernateDaoSupport implements Timeshe
   @Override
   public Timesheet getTimesheet(int employeeId, Date periodEndingDate) {
     Timesheet result = null;
-    Session session = getSessionFactory().openSession();
+    Session session = sessionFactory.openSession();
     Transaction tx = session.beginTransaction();
     try {
       result = (Timesheet) session.createQuery("from Timesheet WHERE employeeId=? and periodEndingDate=?")
@@ -71,7 +77,7 @@ public class TimesheetManagerImpl extends HibernateDaoSupport implements Timeshe
 
   @Override
   public void saveTimesheet(Timesheet timesheet) {
-    Session session = getSessionFactory().openSession();
+    Session session = sessionFactory.openSession();
     Transaction tx = session.beginTransaction();
     try {
       session.saveOrUpdate(timesheet);
@@ -86,7 +92,7 @@ public class TimesheetManagerImpl extends HibernateDaoSupport implements Timeshe
 
   @Override
   public void deleteTimesheet(int timesheetId) {
-    Session session = getSessionFactory().openSession();
+    Session session = sessionFactory.openSession();
     Transaction tx = session.beginTransaction();
     try {
       session.delete(session.load(Timesheet.class, timesheetId));
@@ -102,7 +108,7 @@ public class TimesheetManagerImpl extends HibernateDaoSupport implements Timeshe
 
     @Override
     public Timesheet getTimesheet(int timesheetId, boolean doLock) {
-    Session session = getSessionFactory().openSession();
+    Session session = sessionFactory.openSession();
     Transaction tx = session.beginTransaction();
       Timesheet timesheet  = null;
     try {

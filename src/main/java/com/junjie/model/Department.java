@@ -1,8 +1,12 @@
 package com.junjie.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 /**
  * @author jbu
  */
+@Entity
 public class Department {
   String departmentCode;
   String name;
@@ -15,6 +19,7 @@ public class Department {
     this.name = name;
   }
 
+  @Id
   public String getDepartmentCode() {
     return departmentCode;
   }

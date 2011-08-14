@@ -1,20 +1,34 @@
 package com.junjie.model;
 
 import org.hibernate.HibernateException;
+import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.classic.Session;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.orm.hibernate3.HibernateTemplate;
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 /**
  * @author jbu
  */
-public class EmployeeManagerImpl extends HibernateDaoSupport implements EmployeeManager {
+@Repository("employeeManager")
+public class EmployeeManagerImpl implements EmployeeManager {
+  SessionFactory sessionFactory;
+  HibernateTemplate hibernateTemplate;
+
+  @Autowired
+  public EmployeeManagerImpl(SessionFactory sessionFactory) {
+    this.sessionFactory = sessionFactory;
+    this.hibernateTemplate = new HibernateTemplate(sessionFactory);
+  }
+
   @Override
   public List getHourlyEmployees() {
     List<Employee> result = null;
-    Session session = getSessionFactory().openSession();
+    Session session = sessionFactory.openSession();
     Transaction tx = session.beginTransaction();
     try {
       result = session.createQuery("from Employee WHERE employeeCode='H' ORDER BY name").list();
@@ -31,7 +45,7 @@ public class EmployeeManagerImpl extends HibernateDaoSupport implements Employee
   @Override
   public List getEmployees() {
     List<Employee> result = null;
-    Session session = getSessionFactory().openSession();
+    Session session = sessionFactory.openSession();
     Transaction tx = session.beginTransaction();
     try {
       result = session.createQuery("from Employee ORDER BY name").list();
@@ -48,7 +62,7 @@ public class EmployeeManagerImpl extends HibernateDaoSupport implements Employee
   @Override
   public Employee getEmployeeById(int employeeId) {
     Employee result = null;
-    Session session = getSessionFactory().openSession();
+    Session session = sessionFactory.openSession();
     Transaction tx = session.beginTransaction();
     try {
       result = (Employee) session.createQuery("from Employee WHERE employeeId=?").setInteger(0, employeeId).uniqueResult();
@@ -64,7 +78,7 @@ public class EmployeeManagerImpl extends HibernateDaoSupport implements Employee
 
   @Override
   public void addAll(List<Employee> list) {
-    Session session = getSessionFactory().openSession();
+    Session session = sessionFactory.openSession();
     Transaction tx = session.beginTransaction();
     try {
       int i = 0;
@@ -88,13 +102,13 @@ public class EmployeeManagerImpl extends HibernateDaoSupport implements Employee
 
   @Override
   public int add(Employee e) {
-    getHibernateTemplate().saveOrUpdate(e);
+    hibernateTemplate.saveOrUpdate(e);
     return e.employeeId;
   }
 
   @Override
   public void delete(int employeeId) {
-    getHibernateTemplate().delete(getHibernateTemplate().load(Employee.class, employeeId));
+    hibernateTemplate.delete(hibernateTemplate.load(Employee.class, employeeId));
   }
 
 }

@@ -34,7 +34,7 @@ public class TimesheetListControllerTest extends BaseTest {
   private MockHttpServletRequest mockHttpServletRequest = null;
   private final int EMPLOYEE_ID = 1111;
   private static int timesheetId1 = 0;
-  private static int timesheetId2 = 0;
+  private static int timesheetId2 = 00;
 
   @Test
   public void testShowForm() throws Exception {
